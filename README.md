@@ -24,3 +24,7 @@ return the questions to the front-end and save the answers in the database
 
 #### Postman
 https://www.getpostman.com/collections/fb0d2d979ae72c04211b
+
+#### Pending
+- Dockerization
+- Test
