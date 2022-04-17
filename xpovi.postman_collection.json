@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "2f5f4953-79f8-4f8d-8981-9998c02ed19f",
+		"name": "xpovi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json_data = JSON.parse(responseBody)",
+							"postman.setEnvironmentVariable(\"token\", json_data.access)",
+							"postman.setEnvironmentVariable(\"merchant_id\", json_data.merchant_id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/login/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MDIyMDM0MSwianRpIjoiZGEyY2Q1NTIwNTZjNGUwZDk2OTY0NTVhOTg2ZTMxMmEiLCJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6Im1tZyIsImVtYWlsIjoiIn0.AbgiLkxSEYYSSV79g4x0v_H07b1nZf-o0CLqcb36svk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/login/refresh/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"login",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"moustafa2s2\",\n    \"email\": \"test@te.co\",\n    \"password\": \"Progmmg1321\",\n    \"password2\": \"Progmmg1321\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/register/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_BUSSINESS_PLANE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json_data = JSON.parse(responseBody)",
+							"postman.setEnvironmentVariable(\"plan_token\", json_data.plan_token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"plan1\",\n    \"merchant\": {{merchant_id}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/plan",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST_QUESTION",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/question/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"question",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST_QUESTION_BY_CATEGORY",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_name\": \"fininaced\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/question/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"question",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST_QUESTION_BY_QUESTIONNAIRE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"questionnaire_name\": \"Section1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/question/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"question",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"plan_token\": \"{{plan_token}}\",\n    \"questionnaire\": \"Section1\",\n    \"question_answer\": [\n        {\n            \"question\": \"what is your name?\",\n            \"answer\": \"yes\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/save/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_BUSSINESS_PLAN_QUESTION",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"plan_token\": \"{{plan_token}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/plan/questions",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"plan",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE_ANSWER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"answer\": \"yes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/questionnaire/answer/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"questionnaire",
+						"answer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
