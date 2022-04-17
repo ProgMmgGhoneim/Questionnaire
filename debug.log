@@ -1,0 +1,132 @@
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/xpovi/settings.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/answer_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/answer_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/answer_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/answer_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/question_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/question_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/question_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/question_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/question_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/save_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+Unauthorized: /questionnaire/question/
+[QUESTION][LIST] request data {}
+[QUESTION][LIST] request data {'category_name': 'fininaced'}
+Not Found: /questionnaire/plan/
+Bad Request: /questionnaire/plan
+Unauthorized: /questionnaire/save/
+Bad Request: /questionnaire/plan
+[QUESTION][LIST] request data {}
+[QUESTION][LIST] request data {'category_name': 'fininaced'}
+[QUESTION][LIST] request data {'questionnaire_name': 'Section1'}
+[SAVE] request data {'plan_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGxhbjIiLCJtZXJjaGFudF9pZCI6MSwiaWQiOjQsInRpbWUiOiIxNy0wNC0yMDIyIDE5OjExOjA1In0.XAnugKSPyeIMukmJCAaMrHgmK32l7c_S-q99gEgXLLM', 'questionnaire': 'Section1', 'question_answer': [{'question': 'what is your name?', 'answer': 'yes'}]}
+[SAVE] plans belongs to token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGxhbjIiLCJtZXJjaGFudF9pZCI6MSwiaWQiOjQsInRpbWUiOiIxNy0wNC0yMDIyIDE5OjExOjA1In0.XAnugKSPyeIMukmJCAaMrHgmK32l7c_S-q99gEgXLLM is plan2 - mmg
+[SAVE] response for bussiness plan 4 is 5 
+[SAVE] answer for bussiness plan 4 is [<Answer: what is your name? : yes>] 
+[BUSSINESS-PLAN][QUESTION] request data {'plan_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGxhbjIiLCJtZXJjaGFudF9pZCI6MSwiaWQiOjQsInRpbWUiOiIxNy0wNC0yMDIyIDE5OjExOjA1In0.XAnugKSPyeIMukmJCAaMrHgmK32l7c_S-q99gEgXLLM'}
+Internal Server Error: /questionnaire/plan/questions
+Traceback (most recent call last):
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aboda/Desktop/Questionnares/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py", line 59, in questions
+    logger.debug('[BUSSINESS-PLAN][QUESTION] response id {}'.format(response.id))
+AttributeError: 'QuerySet' object has no attribute 'id'
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
+[BUSSINESS-PLAN][QUESTION] request data {'plan_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicGxhbjIiLCJtZXJjaGFudF9pZCI6MSwiaWQiOjQsInRpbWUiOiIxNy0wNC0yMDIyIDE5OjExOjA1In0.XAnugKSPyeIMukmJCAaMrHgmK32l7c_S-q99gEgXLLM'}
+[BUSSINESS-PLAN][QUESTION] response id <QuerySet [<QResponse: Response: Section1 - plan2 - mmg>]>
+[BUSSINESS-PLAN][QUESTION] answer id <QuerySet [<Answer: what is your name? : yes>]>
+[ANSWER][UPDATE] Answer 1 Updated Successfully
+/home/aboda/Desktop/Questionnares/questionnare/questionnaire/views/bussiness_plan_view.py changed, reloading.
+Using selector: EpollSelector
+Watching for file changes with StatReloader
